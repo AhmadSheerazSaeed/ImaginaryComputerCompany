@@ -1,0 +1,520 @@
+:root {
+  --primaryColor: #fff;
+  --secondaryColor: #f25f5c;
+  --accentColor1: lightgray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: lightgray;
+}
+
+.bodyContainer {
+  width: 95%;
+
+  margin: 2% auto;
+  background-color: #fff;
+}
+
+.topMenu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.roundDiv {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  flex-basis: 25px;
+  background-color: #f25f5c;
+}
+
+.brandName {
+  flex-basis: 80px;
+  display: flex;
+  justify-content: center;
+  color: #f25f5c;
+  font-weight: bolder;
+}
+
+.navigation {
+  flex-basis: 55%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu > li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+
+.menu li a:hover,
+.signInUp > a:hover {
+  font-weight: bolder;
+  color: #f25f5c;
+}
+
+.telephone {
+  flex-basis: 200px;
+  display: flex;
+  justify-content: end;
+  color: #f25f5c;
+}
+
+.signInUp {
+  flex-basis: 270px;
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+}
+
+.signInUp > a {
+  text-decoration: none;
+  color: #f25f5c;
+}
+
+/* main heading*/
+
+.mainHeading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headingFirstLine {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.headingFirstLine > a {
+  color: #f25f5c;
+  text-decoration: none;
+}
+
+.headingSecondLine {
+  text-align: center;
+  margin-bottom: -7rem;
+  z-index: 10;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+/* image section for main image*/
+
+.imageSection {
+  width: 100%;
+  height: 400px;
+}
+
+.imageSection > img {
+  margin-top: 3.5rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 9px;
+}
+
+/* sub heading of Services*/
+
+.ourServices {
+  margin-top: 2.2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+/* our services*/
+.services {
+  color: #f25f5c;
+}
+
+/* Services Cards */
+
+.serviceCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-container {
+  color: black;
+
+  height: 300px;
+  width: 250px;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 6px;
+}
+
+.card-heading {
+  margin-top: 9px;
+  font-size: larger;
+}
+
+.card-img-container {
+  height: 100px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.card-text {
+  text-align: justify;
+  word-break: break-all;
+  width: 80%;
+}
+
+.card-btn {
+  background-color: #fff;
+  outline: solid #f25f5c;
+  width: 110px;
+  height: 35px;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* footer*/
+
+.footer > hr {
+  width: 100%;
+  margin-top: 2rem;
+  color: lightgray;
+}
+
+.brandNameandround {
+  margin-top: 0.2rem;
+}
+
+.copyrightSign {
+  color: #f25f5c;
+}
+
+.privacy {
+  margin-left: 3rem;
+}
+
+.termOfService {
+  margin-left: 3rem;
+}
+
+.brandNameandround > a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Social media logo*/
+
+.socialMediaLogo {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoHW {
+  height: 25px;
+  width: 25px;
+}
+
+.logoHW > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* media quries --------------------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+  .serviceCards {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+  }
+
+  .card-container {
+    margin: 0 auto;
+  }
+
+  .ourServices {
+    margin-bottom: 1rem;
+  }
+}
+
+/* second media query ------------------------------------------------------------------*/
+
+@media screen and (max-width: 838px) {
+  /* top menu*/
+  .topMenu {
+    display: grid;
+    grid-template-areas:
+      "roundDiv brandName  telephone signInUp"
+      "navigation navigation navigation navigation";
+
+    grid-template-columns: 50px 29px 3fr 1fr;
+    grid-template-rows: 1fr;
+
+    margin-bottom: 3rem;
+    padding-top: 0.5rem;
+  }
+
+  .roundDiv {
+    grid-area: roundDiv;
+  }
+
+  .brandName {
+    grid-area: brandName;
+  }
+
+  .navigation {
+    grid-area: navigation;
+    margin-top: 1rem;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .telephone {
+    grid-area: telephone;
+  }
+
+  .signInUp {
+    grid-area: signInUp;
+  }
+  /* footer */
+
+  .brandNameandround {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+
+  .roundDiv {
+  }
+  .brandName {
+  }
+  .copyrightSign {
+    color: #f25f5c;
+    margin: 0;
+    padding: 0;
+  }
+  .telephone {
+  }
+
+  .privacy {
+    margin-left: 1rem;
+  }
+
+  .termOfService {
+    margin-left: 1rem;
+  }
+
+  /* secial media logo*/
+  .socialMediaLogo {
+    margin-top: 0rem;
+  }
+}
+
+/* media query -------------------------------------------------*/
+@media screen and (max-width: 686px) {
+  /* top menu*/
+  .topMenu {
+    grid-template-columns: 50px 29px 4fr 2fr;
+    grid-template-rows: 1fr;
+
+    margin-bottom: 3rem;
+    padding-top: 0.5rem;
+  }
+
+  /* main heading */
+  .headingFirstLine {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .headingSecondLine {
+    font-size: 2rem;
+  }
+
+  /* footer*/
+  .brandNameandround {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* third media query ------------------------------*/
+
+@media screen and (max-width: 640px) {
+  /* top menu*/
+  .topMenu {
+    display: grid;
+    grid-template-areas:
+      "roundDiv brandName brandName "
+      "telephone telephone  signInUp"
+      "navigation navigation navigation";
+
+    grid-template-columns: 30px 1fr 1fr;
+    grid-template-rows: 29px 29px 29px;
+
+    margin-bottom: 4rem;
+    padding-top: 0.3rem;
+  }
+
+  .roundDiv {
+    grid-area: roundDiv;
+  }
+
+  .brandName {
+    grid-area: brandName;
+    justify-self: start;
+  }
+
+  .navigation {
+    grid-area: navigation;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .telephone {
+    grid-area: telephone;
+    justify-self: end;
+  }
+
+  .signInUp {
+    grid-area: signInUp;
+    grid-column: 3/5;
+    justify-content: end;
+  }
+
+  /* services cards */
+  .serviceCards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-container {
+    margin: 0 auto;
+  }
+
+  .ourServices {
+    margin-bottom: 1rem;
+  }
+
+  /* footer */
+
+  .brandNameandround {
+    display: grid;
+    grid-template-areas:
+      "roundDiv brandName copyrightSign telephone"
+      "privacy privacy privacy termofService";
+
+    grid-template-columns: 30px 77px 19px 1fr;
+    grid-template-rows: 50px 50px;
+  }
+
+  .roundDiv {
+    grid-area: roundDiv;
+    margin-top: 9px;
+  }
+
+  .brandName {
+    grid-area: brandName;
+    margin-top: 9px;
+  }
+
+  .copyrightSign {
+    color: #f25f5c;
+    grid-area: copyrightSign;
+  }
+
+  .telephone {
+    grid-area: telephone;
+    justify-self: end;
+  }
+
+  .privacy {
+    grid-area: privacy;
+    justify-self: end;
+    margin-top: -12px;
+  }
+
+  .termOfService {
+    grid-area: termofService;
+    margin-top: -12px;
+  }
+}
+
+/* fourth media query --------------------------------------------*/
+
+@media screen and (max-width: 450px) {
+  /* main heading */
+  .headingFirstLine {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .headingFirstLine > a {
+    color: #f25f5c;
+    text-decoration: none;
+  }
+
+  .headingSecondLine {
+    text-align: center;
+
+    z-index: 10;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+
+  /* main image*/
+
+  .imageSection > img {
+    margin-top: 1rem;
+  }
+
+  /* footer */
+
+  .copyrightSign {
+    margin-top: 9px;
+  }
+
+  .telephone {
+    margin-top: 9px;
+  }
+}

@@ -1,0 +1,416 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+:root {
+  --primaryColor: #020640;
+  --secondaryColor: #00c89c;
+  --accentColor1: #c7fcec;
+  --accentColor2: ##4f8073;
+  --whiteColor: #fff;
+}
+
+body {
+  background-color: var(--primaryColor);
+}
+
+/* check box for menu in small screen */
+
+#check-nav {
+  display: none;
+}
+
+.lbl-checkbox {
+  display: none;
+}
+
+/* check box for menu in small screen */
+
+/* menu items starts*/
+
+.menuItems {
+  display: flex;
+  height: 55px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primaryColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkblue;
+}
+
+/* brand name and menu items */
+.brandName {
+  flex-grow: 1;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.nav-top {
+  flex-grow: 7;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-ul > li > a {
+  color: var(--whiteColor);
+}
+
+.nav-ul > li > a:hover {
+  color: var(--secondaryColor);
+}
+
+a:hover {
+  color: var(--secondaryColor);
+}
+
+.signInUp {
+  flex-grow: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.centerItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--whiteColor);
+}
+
+/* menu item ends */
+
+/* main heading starts*/
+
+.mainHeading {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2rem;
+}
+
+/* main headng ends */
+
+/* Carousel section*/
+
+.carousel-section1 {
+  width: 95%;
+  max-height: 24rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.carousel-item {
+  height: 26rem;
+}
+
+.carousel-item > img {
+  opacity: 0.6;
+}
+
+.pnbtns {
+  height: 1.5rem;
+  margin: auto;
+}
+
+.spantext {
+  color: white;
+  font-weight: bolder;
+}
+
+/* cloud section*/
+
+.cloud-services-section {
+  height: 36rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cloud-head-part {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.cloud-h1 {
+  flex-basis: 90%;
+  text-align: center;
+}
+
+.back-top {
+  flex-basis: 10%;
+  text-align: end;
+}
+
+.cloud-services-divs {
+  height: 88%;
+  display: flex;
+}
+
+.cloud-img {
+  flex-basis: 50%;
+  height: 100%;
+}
+
+.cloud-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.cloud-text {
+  flex-basis: 50%;
+  height: 100%;
+  text-align: justify;
+  word-break: break-all;
+  overflow-y: scroll;
+}
+
+/* database services*/
+
+.database-services-section {
+  height: 36rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.database-head-part {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.database-h1 {
+  flex-basis: 90%;
+  text-align: center;
+}
+
+.back-top2 {
+  flex-basis: 10%;
+  text-align: end;
+  margin-top: 5rem;
+}
+
+.database-services-divs {
+  height: 88%;
+  display: flex;
+}
+
+.database-img {
+  flex-basis: 50%;
+  height: 100%;
+  order: 2;
+}
+
+.database-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.database-text {
+  order: 1;
+  flex-basis: 50%;
+  height: 100%;
+  text-align: justify;
+  word-break: break-all;
+  overflow-y: scroll;
+}
+
+/* network section */
+
+.network-services-section {
+  height: 36rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.network-head-part {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.network-h1 {
+  flex-basis: 90%;
+  text-align: center;
+}
+
+.back-top3 {
+  flex-basis: 10%;
+  text-align: end;
+  margin-top: 5rem;
+}
+
+.network-services-divs {
+  height: 88%;
+  display: flex;
+}
+
+.network-img {
+  flex-basis: 50%;
+  height: 100%;
+  order: 1;
+}
+
+.network-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.network-text {
+  order: 2;
+  flex-basis: 50%;
+  height: 100%;
+  text-align: justify;
+  word-break: break-all;
+  overflow-y: scroll;
+}
+
+/* software services*/
+
+.software-services-section {
+  height: 36rem;
+  width: 99%;
+  margin: 0 auto;
+}
+
+.software-head-part {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.software-h1 {
+  flex-basis: 90%;
+  text-align: center;
+}
+
+.back-top4 {
+  flex-basis: 10%;
+  text-align: end;
+  margin-top: 3rem;
+}
+
+.software-services-divs {
+  height: 88%;
+  display: flex;
+}
+
+.software-img {
+  flex-basis: 50%;
+  height: 100%;
+  order: 2;
+}
+
+.software-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.software-text {
+  order: 1;
+  flex-basis: 50%;
+  height: 100%;
+  text-align: justify;
+  word-break: break-all;
+  overflow-y: scroll;
+}
+
+/* contact us */
+
+.contactus-services-section {
+  height: 36rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contactus-head-part {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.contactus-h1 {
+  flex-basis: 90%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.back-top5 {
+  flex-basis: 10%;
+  text-align: end;
+  margin-top: 3rem;
+}
+
+.first-row,
+.second-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 1rem;
+}
+
+.first-row-img-div {
+  height: 4rem;
+  width: 5rem;
+}
+
+.icon-img {
+  width: 100%;
+  height: 100%;
+}
+
+/*----------------------------------------------------------*/
+/* media query starts */
+
+@media (max-width: 650px) {
+  /* menu items and sign in sign up*/
+
+  .menuItems {
+    flex-direction: column;
+    height: 150px;
+    gap: 1rem;
+  }
+
+  .brandName {
+    order: 1;
+    align-self: center;
+  }
+
+  .nav-top {
+    order: 3;
+    align-self: center;
+  }
+
+  .signInUp {
+    order: 2;
+    align-self: center;
+  }
+
+  /**/
+  .carousel-div {
+    height: 300px;
+  }
+  /* media query ends */
+}

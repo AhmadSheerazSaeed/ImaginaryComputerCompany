@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  background-color: gray;
+  height: 15rem;
+  width: 15rem;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.container1 > p::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+  margin-top: 1rem;
+}
+
+.container1 > p {
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+  user-select: none;
+  position: absolute;
+}
+
+.para1::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+  margin-top: -1rem;
+}
+
+.toggler1 {
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgray;
+}
+
+.hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.hamburger > div::before,
+.hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.hamburger > div::after {
+  top: 10px;
+}
