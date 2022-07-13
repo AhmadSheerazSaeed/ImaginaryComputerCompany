@@ -16,8 +16,8 @@
         <div class="brandName">ImComCo</div>
         <nav class="navigation">
           <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
             <li><a href="#">News & blog</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -33,25 +33,26 @@
     <section class="formWrapper">
       <h2>Sign Up</h2>
       <form action="submit" method="post" class="signup">
-        <label for="firstName">First Name</label>
-        <input type="text" id="firstName" required />
+        <label for="firstName" class="inputandLabel">First Name</label>
+        <input class="inputandLabel" type="text" id="firstName" required />
 
-        <label for="lastName">Last Name</label>
-        <input type="text" id="lastName" required />
+        <label for="lastName" class="inputandLabel">Last Name</label>
+        <input class="inputandLabel" type="text" id="lastName" required />
 
-        <label for="email">E-Mail Id</label>
+        <label for="email" class="inputandLabel">E-Mail Id</label>
         <input
+          class="inputandLabel"
           type="text"
           id="email"
           required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         />
 
-        <label for="password">Password</label>
-        <input type="password" id="password" required />
+        <label for="password" class="inputandLabel">Password</label>
+        <input class="inputandLabel" type="password" id="password" required />
 
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <button type="submit" class="inputandLabel">Submit</button>
+        <button type="reset" class="inputandLabel">Reset</button>
       </form>
     </section>
   </body>
