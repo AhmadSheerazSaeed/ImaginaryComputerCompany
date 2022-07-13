@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/site1.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!-- top section including brand name menu signin and signup picture with heading-->
+    <section class="topSection">
+      <div class="topMenu">
+        <div class="roundDiv"></div>
+        <div class="brandName">ImComCo</div>
+        <nav class="navigation">
+          <ul class="menu">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News & blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="telephone">+49 176 12345678</div>
+        <div class="signInUp">
+          <a href="#" class="signIn">Sign In</a>
+          <a href="#" class="singUp">Sign Up</a>
+        </div>
+      </div>
+    </section>
+    <!-- form -->
+    <section class="formWrapper">
+      <h2>Sign Up</h2>
+      <form action="submit" method="post" class="signup">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" required />
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" required />
+
+        <label for="email">E-Mail Id</label>
+        <input
+          type="text"
+          id="email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </body>
+</html>
